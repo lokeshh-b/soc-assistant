@@ -5,6 +5,10 @@ Verifies timestamp extraction, schema conversion, error handling, and malformed 
 """
 
 
+import pytest
+
+
+@pytest.mark.skip(reason="Pending Member 1 implementation of src/parser.py")
 def test_parser_placeholder() -> None:
     """Placeholder test for parser validation."""
     pass

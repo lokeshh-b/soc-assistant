@@ -5,6 +5,10 @@ Verifies streaming batching behavior, sliding window slicing, and event dispatch
 """
 
 
+import pytest
+
+
+@pytest.mark.skip(reason="Pending Member 1 implementation of src/streamer.py")
 def test_streamer_placeholder() -> None:
     """Placeholder test for streamer validation."""
     pass
