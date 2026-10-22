@@ -218,3 +218,37 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# -----------------------------------------------------------------------------
+# Explainable SOC Assistant - Project Specific Exclusions
+# -----------------------------------------------------------------------------
+
+# Environment configuration
+.env
+.env.*
+!.env.example
+
+# Raw and processed datasets
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Trained model binaries and checkpoints
+models/*
+!models/.gitkeep
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.onnx
+
+# Temporary artifacts, logs, and evaluation reports
+artifacts/*
+!artifacts/.gitkeep
+
+# Generated database files and runtime stores
+*.db
+*.sqlite
+*.sqlite3
+pipeline_state.db
